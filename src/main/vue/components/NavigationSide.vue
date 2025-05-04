@@ -150,6 +150,11 @@ export default {
         route: '/status',
         label: 'Status',
         icon: 'mdi-information'
+      },
+      {
+        route: '/newpage',
+        label: 'New Page',
+        icon: 'mdi-timer-sand'
       }
     ]
   }),
