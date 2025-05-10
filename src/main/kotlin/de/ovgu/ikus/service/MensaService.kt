@@ -176,15 +176,6 @@ class MensaService(
                         ?: "Error"
 
                     // Extract price
-                    // val price = tds[0].childNodes()
-                    //     .lastOrNull { it is TextNode && it.text().contains("(") }
-                    //     ?.let {
-                    //         val priceText = (it as TextNode).text().trim()
-                    //         val prices = priceText.removeSurrounding("(", ")").split("|")
-                    //         prices.firstOrNull()?.trim()?.replace(",", ".")?.toDouble()
-                    //     }
-                    //     ?: 0.0
-                    // Extract price (fallback to 0.0 if not found)
                     val priceRegex = Regex("""\(([\d,.\s|]+)\)""")
                     val priceTextFull = tds[0].wholeText()
 
